@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>While Loop</title>
+</head>
+<body>
+	<div id="tweets-div" > </div>
+	<script type="text/javascript">
+		var tweets =["hi everyone", "I love Coffee" ,"sleeping"] ;
+			var tweetString="";
+			var i=0 
+			while (i<tweets.length ) {
+				
+				tweetString=tweetString +"<p>" +tweets[i] +"</p>" ;
+				i++
+			}
+
+			document.getElementById("tweets-div").innerHTML=tweetString ;
+
+
+			
+
+
+	</script>
+
+</body>
+</html>

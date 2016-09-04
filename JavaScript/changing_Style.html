@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manipulating and changing style</title>
+</head>
+<body>
+
+<p id="visible-vs-invivible" >digamber </p>
+<button id="change-style">changes</button>
+<button id="invisible">invisible</button>
+
+<script type="text/javascript"> 
+	
+
+document.getElementById("change-style").onclick = function() {
+
+document.getElementById("visible-vs-invivible").style.color="red";
+document.getElementById("visible-vs-invivible").style.fontSize="40px";
+document.getElementById("visible-vs-invivible").style.fontFamily="sans-serif";
+}
+
+
+document.getElementById("invisible").onclick = function() {
+
+document.getElementById("visible-vs-invivible").style.display="none";
+
+}
+
+
+</script>
+
+</body>
+</html>

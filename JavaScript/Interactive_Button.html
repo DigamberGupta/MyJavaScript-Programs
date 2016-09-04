@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interactive Button</title>
+</head>
+<body>
+
+<p id="text" > my name  </p>
+<button id="change-button"> change text</button>
+
+<button id="second-button">Append text </button>
+
+<p id="change-text" > javascript... </p>
+
+
+<button id ="magic-button"> magic-button</button>
+
+<p id="magic-text"></p>
+<script type="text/javascript">
+	
+	document.getElementById("text").innerHTML="Digamber Gupta";
+
+	document.getElementById("change-button").onclick= function () {
+
+	document.getElementById("text").innerHTML="Is My Name";
+	document.getElementById("change-text").innerHTML="hellow digamber";
+	}
+
+
+	document.getElementById("second-button").onclick = function () {
+
+		document.getElementById("change-text").innerHTML="thats me and i learn " + document.getElementById("change-text").innerHTML + "which is awesome !"  ;
+	}
+
+	document.getElementById("magic-button").onclick=function () {
+
+		document.getElementById("magic-text").innerHTML="<h1> i love it </h1>" ;
+	}
+
+
+</script>
+
+</body>
+</html>

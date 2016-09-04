@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>variables</title>
+</head>
+<body>
+
+
+<input type="text" id="input-text"> 
+
+ <button id="input-button">change the text</button>
+ <p id="paragraph-text"> This is some text </p>
+
+<script type="text/javascript">
+	
+document.getElementById('input-button').onclick=function () {
+	var inputValue=" ";
+	inputvalue=document.getElementById("input-text").value;
+
+	document.getElementById("paragraph-text").innerHTML=inputvalue;
+}
+
+
+
+</script>
+
+
+
+</body>
+</html>

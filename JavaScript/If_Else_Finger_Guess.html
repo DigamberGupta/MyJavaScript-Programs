@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Finger Guess</title>
+</head>
+<body>
+<p> How many fingure am I holding up ?</p>
+<input type="text" id="input-text">
+<button id="input-button">Guess It</button>
+
+<script type="text/javascript">
+	
+	document.getElementById('input-button').onclick=function (){
+		var guess =document.getElementById("input-text").value;
+
+		var random=Math.floor(Math.random()*6);
+
+		if (guess==random)
+		{
+			alert("you got it!");
+		}
+		else {
+			alert ("nope you dont ! the number was " +random);
+		}
+
+
+
+
+	}
+
+
+
+</script>
+
+</body>
+</html>

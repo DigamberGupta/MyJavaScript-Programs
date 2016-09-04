@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>If Statement</title>
+</head>
+<body>
+<p> Guess The Magic Word</p>
+<input type="text" id="input-text">
+<button id="input-button" >Confirm Guess </button>
+	<script type="text/javascript">
+	var x=1;
+	var magicword="";
+		document.getElementById('input-button').onclick =function (){
+
+
+	magicword=document.getElementById('input-text').value;
+
+	if(magicword=="love you")
+	{
+
+		alert ("Congratulation you guessed it right");
+	}
+	else {
+		alert("sorry your guess is wrong");
+	}
+
+	}
+
+	
+
+	</script>
+</body>
+</html>

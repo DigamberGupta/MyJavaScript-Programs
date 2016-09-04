@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Finger Guess</title>
+</head>
+<body>
+	<p>How many fingers are you holding up ? </p>
+	<select  id="user-guess">
+	<option>0</option>
+	<option>1</option>
+	<option>2</option>
+	<option>3</option>
+	<option>4</option>
+	<option>5</option>
+
+	</select>
+	<button id="submit-user-guess">no of guess</button>
+	<script type="text/javascript">
+			var i=1;
+			var guess="";
+			var random=0;
+			random=(Math.floor(Math.random()*6)+1);
+
+		document.getElementById("submit-user-guess").onclick=function(){
+
+			guess=document.getElementById("user-guess").value;
+			
+			
+			while( random != guess){
+
+				random=(Math.floor(Math.random()*6)+1);
+				i++;
+
+				} 
+				
+				alert("Got it ! It was a " +random + ", It took me " + i  +" guesses.");
+		}
+
+			
+
+	</script>
+
+</body>
+</html>
